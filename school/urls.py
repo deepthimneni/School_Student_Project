@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from students import views
 urlpatterns = [
+    path('', views.show),
     path('admin/', admin.site.urls),
     path('stud', views.stud),
     path('show',views.show),

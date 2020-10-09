@@ -12,27 +12,9 @@
       </div>
     </div>
     <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Id:</label>
-      <div class="col-sm-4">
-        <input type="text" name="id" id="id" readonly required maxlength="20" value="{{ student.id }}" />
-      </div>
-    </div>
-    <div class="form-group row">
       <label class="col-sm-2 col-form-label">Student Name:</label>
       <div class="col-sm-4">
         <input type="text" name="name" id="name" required maxlength="100" value="{{ student.name }}" />
-      </div>
-    </div>
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Email:</label>
-      <div class="col-sm-4">
-        <input type="email" name="email" id="email" required maxlength="128" value="{{ student.email }}" />
-      </div>
-    </div>
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Contact:</label>
-      <div class="col-sm-4">
-        <input type="text" name="phone" id="phone" required maxlength="15" value="{{ student.phone }}" />
       </div>
     </div>
     <div class="form-group row">
@@ -54,15 +36,32 @@
       </div>
     </div>
     <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Student Email:</label>
+      <div class="col-sm-4">
+        <input type="email" name="email" id="email" required maxlength="128" value="{{ student.email }}" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Student Contact:</label>
+      <div class="col-sm-4">
+        <input type="text" name="phone" id="phone" required maxlength="15" value="{{ student.phone }}" />
+      </div>
+    </div>
+
+    <div class="form-group row">
       <label class="col-sm-2 col-form-label">Student Address:</label>
       <div class="col-sm-4">
-        <input type="text" name="address" id="address" required maxlength="256" value="{{ student.address }}" />
+        <textarea id="address" name="address" required rows="4" cols="50"
+          value="{{ student.address }}">{{ student.address }}</textarea>
+
+        <!-- <input type="text" name="address" id="address" required maxlength="256" value="{{ student.address }}" /> -->
       </div>
     </div>
     <div class="form-group row">
       <label class="col-sm-1 col-form-label"></label>
       <div class="col-sm-4">
         <button type="submit" class="btn btn-success">Update</button>
+        <button class="btn btn-secondary" type="button" onclick="location.pathname='\show'">Cancel</button>
       </div>
     </div>
   </div>

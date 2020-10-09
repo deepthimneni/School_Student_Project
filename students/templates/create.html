@@ -12,15 +12,28 @@
       </div>
     </div>
     <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Id:</label>
-      <div class="col-sm-4">
-        {{ form.id }}
-      </div>
-    </div>
-    <div class="form-group row">
       <label class="col-sm-2 col-form-label">Student Name:</label>
       <div class="col-sm-4">
         {{ form.name }}
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Student Gender:</label>
+      <div class="col-sm-4">
+        {{ form.gender }}
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Student Age:</label>
+      <div class="col-sm-4">
+        {{ form.age }}
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Student Class:</label>
+      <div class="col-sm-4">
+        {{ form.standard }}
       </div>
     </div>
     <div class="form-group row">
@@ -35,24 +48,7 @@
         {{ form.phone }}
       </div>
     </div>
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Gender:</label>
-      <div class="col-sm-4">
-        {{ form.gender }}
-      </div>
-    </div>
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Age:</label>
-      <div class="col-sm-4">
-        {{ form.age }}
-      </div>
-    </div>
-    <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Student Class:</label>
-      <div class="col-sm-4">
-        {{ form.standard }}
-      </div>
-    </div>
+
     <div class="form-group row">
       <label class="col-sm-2 col-form-label">Student Address:</label>
       <div class="col-sm-4">
@@ -62,7 +58,8 @@
     <div class="form-group row">
       <label class="col-sm-1 col-form-label"></label>
       <div class="col-sm-4">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <button class="btn btn-secondary" type="button" onclick="location.pathname='\show'">Cancel</button>
       </div>
     </div>
   </div>
