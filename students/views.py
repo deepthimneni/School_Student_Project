@@ -13,7 +13,7 @@ def stud(request):
                 pass
     else:
         form = StudentForm()
-    return render(request,'index.html',{'form':form})
+    return render(request,'create.html',{'form':form})
 def show(request):
     students = Student.objects.all()
     return render(request,"show.html",{'students':students})
